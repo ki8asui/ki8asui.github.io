@@ -7,7 +7,9 @@ var tour = {
         gyro: true,
          hotspots: [
         { type: 'nav', face: 0, x: 1280.0, y: 528.0, name:'Arisas Room', value: 'Room1' },
-            
+          {type: 'nav', face: 1, x: 1000.0, y: 500.0, name:'Go to Hall', value: 'AH' },
+          {type: 'nav', face: 1, x: 800.0, y: 450.0, name:'Go to Lecture Rooms', value: 'LR' },  
+       {type: 'nav', face: 1, x: 600.0, y: 400.0, name:'Go to the Mess Hall', value: 'Mess' }, 
        ]
     },
     Room1: {
@@ -17,29 +19,26 @@ var tour = {
             { type: 'nav', face: 2, x: 100, y: 400, name:'Go Out ', value: 'transporter' },
               ]
     },
-    arcade: {
-        infobox: '<b>Arcade</b><br>Somewhere in Japan',
-        sides: ['example/19/0000.jpg', 'example/19/0001.jpg', 'example/19/0002.jpg', 'example/19/0003.jpg', 'example/19/0004.jpg', 'example/19/0005.jpg'],
+    AH: {
+        infobox: '<b>AH </b> <br> Our Hall',
+        sides: ['joe/files/ah/01.jpg', 'joe/files/ah/02.jpg', 'joe/files/ah/03.jpg', 'joe/files/ah/04.jpg', 'joe/files/ah/05.jpg', 'joe/files/ah/06.jpg' ],
         hotspots: [
-            { type: 'nav', face: 0, x: 500, y: 500, name:'Beam Me Up', value: 'transporter' },
-            { type: 'nav', face: 3, x: 250, y: 450, name:'Photo Studio', value: 'studio' },
-        ]
+            { type: 'nav', face: 2, x: 100, y: 400, name:'Compound ', value: 'transporter' },
+              ]
     },
-    studio: {
-        infobox: '<b>Photo Studio</b>',
-        sides: ['example/20/0000.jpg', 'example/20/0001.jpg', 'example/20/0002.jpg', 'example/20/0003.jpg', 'example/20/0004.jpg', 'example/20/0005.jpg'],
+    LR: {
+        infobox: '<b>Lecture Rooms </b> <br> Our Lecture Rooms',
+        sides: ['joe/files/lr/01.jpg', 'joe/files/lr/02.jpg', 'joe/files/lr/03.jpg', 'joe/files/lr/04.jpg', 'joe/files/lr/05.jpg', 'joe/files/lr/06.jpg' ],
         hotspots: [
-            { type: 'nav', face: 1, x: 1000, y: 500, name:'Beam Me Up', value: 'transporter' },
-            { type: 'nav', face: 3, x: 350, y: 850, name:'Back to Arcade', value: 'arcade' },
-        ]
+            { type: 'nav', face: 2, x: 100, y: 400, name:'Compound ', value: 'transporter' },
+              ]
     },
-    archives: {
-        infobox: '<b>The Archives</b><br>In the basement',
-        sides: ['example/14/0000.jpg', 'example/14/0001.jpg', 'example/14/0002.jpg', 'example/14/0003.jpg', 'example/14/0004.jpg', 'example/14/0005.jpg'],
+    Mess: {
+        infobox: '<b>Mess </b> <br> Where we eat!',
+        sides: ['joe/files/mess/01.jpg', 'joe/files/mess/02.jpg', 'joe/files/mess/03.jpg', 'joe/files/mess/04.jpg', 'joe/files/mess/05.jpg', 'joe/files/mess/06.jpg' ],
         hotspots: [
-            { type: 'nav', face: 3, x: 400, y: 500, name:'Beam Me Up', value: 'transporter' },
-            { type: 'link', face: 5, x: 0, y: 100, name:'You\'ve found the configuration script!', value: 'example/tour.js' },
-        ]
+            { type: 'nav', face: 2, x: 100, y: 400, name:'Compound ', value: 'transporter' },
+              ]
     },
     hall: {
         infobox: '<b>Concert Hall</b>',
@@ -49,30 +48,7 @@ var tour = {
             { type: 'nav', face: 3, x: 650, y: 600, name:'Exit to the Lounge', value: 'lounge' },
         ]
     },
-    lounge: {
-        infobox: '<b>Lounge</b>',
-        sides: ['example/27/0000.jpg', 'example/27/0001.jpg', 'example/27/0002.jpg', 'example/27/0003.jpg', 'example/27/0004.jpg', 'example/27/0005.jpg'],
-        hotspots: [
-            { type: 'nav', face: 3, x: 400, y: 500, name:'Beam Me Up', value: 'transporter' },
-            { type: 'nav', face: 0, x: 980, y: 500, name:'Back to the Concert Hall', value: 'hall' },
-
-        ]
-    },
-    hut: {
-        infobox: '<b>Japanese Hut</b><br>Please take off your shoes',
-        sides: ['example/18/0000.jpg', 'example/18/0001.jpg', 'example/18/0002.jpg', 'example/18/0003.jpg', 'example/18/0004.jpg', 'example/18/0005.jpg'],
-        hotspots: [
-            { type: 'nav', face: 3, x: 400, y: 500, name:'Beam Me Up', value: 'transporter' },
-        ]
-    },
-    ruins: {
-        infobox: '<b>Abandoned House</b>',
-        sides: ['example/24/0000.jpg', 'example/24/0001.jpg', 'example/24/0002.jpg', 'example/24/0003.jpg', 'example/24/0004.jpg', 'example/24/0005.jpg'],
-        hotspots: [
-            { type: 'nav', face: 1, x: 0, y: 500, name:'Beam Me Up', value: 'transporter' },
-            { type: 'nav', face: 4, x: 200, y: 1000, name:'Climb the Stairs', value: 'wtf' },
-        ]
-    },
+    
     wtf: {
         infobox: 'WTF?',
         autorotate:.5,
